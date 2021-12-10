@@ -79,6 +79,8 @@ const Nav = ({ children }) => {
                     <NextLink href="/botanic" passHref ><Link fontSize='2em'>Botanic</Link></NextLink>
                     <NextLink href="/yale" passHref ><Link fontSize='2em'>Yale</Link></NextLink>
                     <NextLink href="/wag" passHref ><Link fontSize='2em'>Wag Central</Link></NextLink>
+                    <NextLink href="/snap" passHref ><Link fontSize='2em'>Snap</Link></NextLink>
+                    <NextLink href="/branding" passHref ><Link fontSize='2em'>Brand + Identity</Link></NextLink>
 
                 </Wrap>
 
