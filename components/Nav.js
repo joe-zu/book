@@ -32,25 +32,28 @@ const Nav = ({ children }) => {
 
     return (
         <StickNav
-            w={['100vw', '100vw', '36vw', '36vw']}
+            w={['100vw', '100vw', '30vw', '30vw']}
             h={['6em', '6em', '100vh', '100vh']}
             direction="column"
             bg="white"
             align={['', '', 'left', 'left']}
-            px={8}
+            pl={8}
         >
-            <Flex mb={6} mt={6} >
+            <Flex my={6} >
+                    <NextLink href="/" passHref>
                 <Flex>
-                    <Avatar size='md' name="Joseph Giampaoli" src="">
-                        <Tooltip hasArrow label="Open to work" aria-label="Open to work" bg="green.500" color="white">
-                            <AvatarBadge boxSize='1.15em' bg='green.500' />
-                        </Tooltip>
-                    </Avatar>
+                        <Avatar size='md' name="Joseph Giampaoli" src="">
+                            <Tooltip hasArrow label="Open to work" aria-label="Open to work" bg="green.500" color="white">
+                                <AvatarBadge boxSize='1.15em' bg='green.500' />
+                            </Tooltip>
+                        </Avatar>
+
                     <Flex direction="column" pl={6} justify='center'>
                         <Text fontSize={['lg', 'lg', 'xl', 'xl']} fontWeight='600' lineHeight='1em'>Joseph Giampaoli</Text>
                         <Text fontSize={['md', 'md', 'lg', 'lg']}>Graphic Designer</Text>
                     </Flex>
                 </Flex>
+                </NextLink>
                 <Spacer />
                 <Flex>
                     <IconButton
@@ -69,14 +72,13 @@ const Nav = ({ children }) => {
                 mt={10}
             >
                 {/* <Text fontSize="md" fontWeight='900'>RECENT WORK</Text> */}
-                <Wrap>
-                <Text fontSize="md" fontWeight='900'>RECENT WORK</Text>
-                    <Link fontSize='2em'><NextLink href="/creditKarma">Credit Karma</NextLink></Link>
-                    <Link fontSize='2em'><NextLink href="/creditKarma">asdas</NextLink></Link>
-                    <Link fontSize='2em'><NextLink href="/creditKarma">aa33</NextLink></Link>
-
-                    
-
+                <Wrap align='center'>
+                    <Text fontSize="md" fontWeight='900'>RECENT WORK</Text>
+                    <NextLink href="/creditKarma" passHref ><Link fontSize='2em'>Credit Karma</Link></NextLink>
+                    <NextLink href="/inStore" passHref ><Link fontSize='2em'>In Store</Link></NextLink>
+                    <NextLink href="/botanic" passHref ><Link fontSize='2em'>Botanic</Link></NextLink>
+                    <NextLink href="/yale" passHref ><Link fontSize='2em'>Yale</Link></NextLink>
+                    <NextLink href="/wag" passHref ><Link fontSize='2em'>Wag Central</Link></NextLink>
 
                 </Wrap>
 

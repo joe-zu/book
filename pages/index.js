@@ -9,7 +9,7 @@ import {
   Box,
   Center,
 } from '@chakra-ui/react'
-import Link from 'next/link'
+import NextLink from 'next/link'
 
 export default function Home() {
   return (

@@ -11,16 +11,8 @@ import {
 } from '@chakra-ui/react'
 import NextImage from 'next/image'
 import frame1 from '../public/assets/ck/frame1.png'
-import frame2 from '../public/assets/ck/frame2.png'
-import frame3 from '../public/assets/ck/frame3.png'
-import frame4 from '../public/assets/ck/frame4.png'
-import frame5 from '../public/assets/ck/frame5.png'
-import frame6 from '../public/assets/ck/frame6.png'
-import frame7 from '../public/assets/ck/frame7.png'
-import frame8 from '../public/assets/ck/frame8.png'
-import frame9 from '../public/assets/ck/frame9.png'
-import frame10 from '../public/assets/ck/frame10.png'
-import frame11 from '../public/assets/ck/frame11.png'
+import frame2 from '../public/assets/ck/sparks.png'
+import frame3 from '../public/assets/ck/stax.png'
 
 
 //need Head - Title (seo)
