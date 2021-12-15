@@ -34,7 +34,7 @@ export default function inStore() {
                         <ProjectTitle title="Point of Purchase" subtitle="animation, design, environmental" company="Barrows" location="Los Angeles" />
                     </Box>
                     <Flex display={['none', 'none', 'flex', 'flex']}>
-                        <ReactPlayer url="assets/cbd.webm" playing loop width="100" height="100" />
+                        <ReactPlayer url="assets/cbd.webm" playing loop volume={0} muted width="100" height="100" />
                     </Flex>
                     <Box>
                         <NextImage placeholder="blur" intrinsic priority src={frame2} alt="credit karma email image" />
@@ -43,7 +43,7 @@ export default function inStore() {
                         <NextImage placeholder="blur" intrinsic src={frame3} alt="credit karma email image" />
                     </Box>
                     <Flex display={['none', 'none', 'flex', 'flex']} h={['400px', '400px', '500px','600px']}>
-                        <ReactPlayer url="assets/hearth.webm" playing loop width="100" height="100" />
+                        <ReactPlayer url="assets/hearth.webm" playing loop volume={0} muted width="100" height="100" />
                     </Flex>
                     <Box>
                         <NextImage placeholder="blur" intrinsic src={frame4} alt="credit karma email image" />
@@ -55,7 +55,7 @@ export default function inStore() {
                         <NextImage placeholder="blur" intrinsic src={frame6} alt="credit karma email image" />
                     </Box>
                     <Flex display={['none', 'none', 'flex', 'flex']}>
-                        <ReactPlayer url="assets/jworld.webm" playing loop width="100" height="100" />
+                        <ReactPlayer url="assets/jworld.webm" playing loop volume={0} muted width="100" height="100" />
                     </Flex>
                     <Box>
                         <NextImage placeholder="blur" intrinsic src={frame7} alt="credit karma email image" />

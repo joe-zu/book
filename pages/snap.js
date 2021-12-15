@@ -39,13 +39,13 @@ export default function creditKarma() {
                         <NextImage placeholder="blur" intrinsic priority src={frame1} alt="credit karma email image" />
                     </Flex>
                     <Flex display={['none', 'none', 'flex', 'flex']}>
-                        <ReactPlayer url="assets/snap/snap1.webm" playing loop width="100" height="100" />
+                        <ReactPlayer url="assets/snap/snap1.webm" playing loop volume={0} muted width="100" height="100" />
                     </Flex>
                     <Box>
                         <NextImage intrinsic src={frame3} alt="credit karma email image" />
                     </Box>
                     <Flex display={['none', 'none', 'flex', 'flex']}>
-                        <ReactPlayer url="assets/snap/snap2.webm" playing loop width="100" height="100" />
+                        <ReactPlayer url="assets/snap/snap2.webm" playing loop volume={0} muted width="100" height="100" />
                     </Flex>
                     <Box>
                         <NextImage intrinsic src={frame2} alt="credit karma email image" />

@@ -37,50 +37,50 @@ export default function index() {
                 py={2}
                 px={8}
             >
-                <VStack spacing={8} >
+                <VStack spacing={8}>
                     <Flex direction={['column', 'column', 'row', 'row']}>
                         <Box w='100%' mt={2} mb={4}>
                             <ProjectTitle title="Email Campaign" subtitle="design, production" company="Credit Karma" location="Los Angeles" />
                         </Box>
                         <Flex display={['none', 'none', 'flex', 'flex']}>
-                            <ReactPlayer url="assets/ck_notification.webm" playing loop width="100" height="100" />
+                            <ReactPlayer url="assets/ck_notification.webm" playing loop volume={0} muted width="100" height="100" />
                         </Flex>
                     </Flex>
                     <Box>
-                        <NextImage placeholder="blur" intrinsic priority src={frame1} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic="true" priority src={frame1} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage placeholder="blur" intrinsic src={frame2} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic="true" src={frame2} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage placeholder="blur" intrinsic src={frame3} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic="true" src={frame3} alt="credit karma email image" />
                     </Box>
-                    <Flex display={['none', 'none', 'flex', 'flex']}>
-                        <ReactPlayer url="assets/checklist.webm" playing loop width="100" height="100" />
+                    <Flex display={['none', 'none', 'flex', 'flex']} h="600px">
+                        <ReactPlayer url="assets/checklist.webm" playing loop volume={0} muted width="100" height="100" />
                     </Flex>
                     <Box>
-                        <NextImage placeholder="blur" intrinsic src={frame4} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic="true" src={frame4} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage placeholder="blur" intrinsic src={frame5} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic="true" src={frame5} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage placeholder="blur" intrinsic src={frame6} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic="true" src={frame6} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage placeholder="blur" intrinsic src={frame7} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic="true" src={frame7} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage placeholder="blur" intrinsic src={frame8} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic="true" src={frame8} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage placeholder="blur" intrinsic src={frame9} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic="true" src={frame9} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage placeholder="blur" intrinsic src={frame10} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic="true" src={frame10} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage placeholder="blur" intrinsic src={frame11} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic="true" src={frame11} alt="credit karma email image" />
                     </Box>
                 </VStack>
             </Box>
