@@ -38,11 +38,16 @@ export default function index() {
                 px={8}
             >
                 <VStack spacing={8} >
-                <Flex direction={['column', 'column', 'row', 'row']}>
+                    <Flex direction={['column', 'column', 'row', 'row']}>
                         <Box w='100%' mt={2} mb={4}>
                             <ProjectTitle title="Email Campaign" subtitle="design, production" company="Credit Karma" location="Los Angeles" />
                         </Box>
-                        <ReactPlayer url="assets/ck_notification.webm" playing loop width="100%" height="100%" />
+                        <Flex display={['none', 'none', 'flex', 'flex']}>
+                            <ReactPlayer url="assets/ck_notification.webm" playing loop width="100" height="100" />
+                        </Flex>
+                        <Flex display={['flex', 'flex', 'none', 'none']}>
+                            <ReactPlayer controls playing='false' url="assets/ck_notification.webm" loop width="100" height="100" />
+                        </Flex>
                     </Flex>
                     <Box>
                         <NextImage placeholder="blur" intrinsic priority src={frame1} alt="credit karma email image" />
@@ -53,9 +58,12 @@ export default function index() {
                     <Box>
                         <NextImage placeholder="blur" intrinsic src={frame3} alt="credit karma email image" />
                     </Box>
-                    <Box h={['400', '480px', '520px', '520px']} >
-                        <ReactPlayer url="assets/checklist.webm" playing loop width="100%" height="100%" />
-                    </Box>
+                    <Flex display={['none', 'none', 'flex', 'flex']}>
+                        <ReactPlayer url="assets/checklist.webm" playing loop width="100" height="100" />
+                    </Flex>
+                    <Flex display={['flex', 'flex', 'none', 'none']}>
+                        <ReactPlayer controls playing='false' url="assets/checklist.webm" loop width="100" height="100" />
+                    </Flex>
                     <Box>
                         <NextImage placeholder="blur" intrinsic src={frame4} alt="credit karma email image" />
                     </Box>

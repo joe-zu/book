@@ -28,7 +28,6 @@ import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 
 const Nav = ({ children }) => {
 
-    // const [display, changeDisplay] = useState('none')
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     const StickNav = styled(Flex)`
@@ -118,9 +117,6 @@ const Nav = ({ children }) => {
                 </Flex>
             </Flex>
 
-
-
-
             <Modal
                 isCentered
                 onClose={onClose}
@@ -172,30 +168,6 @@ const Nav = ({ children }) => {
                     </ModalBody>
                 </ModalContent>
             </Modal>
-            {/* <Flex
-                w='100vw'
-                h='100vh'
-                bgColor='gray.50'
-                zIndex={20}
-                pos='fixed'
-                top='0'
-                left='0'
-                overflowY='auto'
-                flexDir='column'
-                display={display}
-            >
-                <Flex justify="flex-end">
-                    <IconButton
-                        aria-label="close Menu"
-                        mt={2}
-                        mr={2}
-                        size="lg"
-                        icon={<CloseIcon />}
-                        onClick={() => changeDisplay('none')}
-                    />
-                </Flex>
-            </Flex> */}
-
         </StickNav>
     )
 
