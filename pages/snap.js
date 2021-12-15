@@ -41,17 +41,11 @@ export default function creditKarma() {
                     <Flex display={['none', 'none', 'flex', 'flex']}>
                         <ReactPlayer url="assets/snap/snap1.webm" playing loop width="100" height="100" />
                     </Flex>
-                    <Flex display={['flex', 'flex', 'none', 'none']}>
-                        <ReactPlayer controls playing='false' url="assets/snap/snap1.webm" loop width="100" height="100" />
-                    </Flex>
                     <Box>
                         <NextImage intrinsic src={frame3} alt="credit karma email image" />
                     </Box>
                     <Flex display={['none', 'none', 'flex', 'flex']}>
                         <ReactPlayer url="assets/snap/snap2.webm" playing loop width="100" height="100" />
-                    </Flex>
-                    <Flex display={['flex', 'flex', 'none', 'none']}>
-                        <ReactPlayer controls playing='false' url="assets/snap/snap2.webm" loop width="100" height="100" />
                     </Flex>
                     <Box>
                         <NextImage intrinsic src={frame2} alt="credit karma email image" />

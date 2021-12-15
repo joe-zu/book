@@ -45,9 +45,6 @@ export default function index() {
                         <Flex display={['none', 'none', 'flex', 'flex']}>
                             <ReactPlayer url="assets/ck_notification.webm" playing loop width="100" height="100" />
                         </Flex>
-                        <Flex display={['flex', 'flex', 'none', 'none']}>
-                            <ReactPlayer controls playing url="assets/ck_notification.webm" loop width="100" height="100" />
-                        </Flex>
                     </Flex>
                     <Box>
                         <NextImage placeholder="blur" intrinsic priority src={frame1} alt="credit karma email image" />
@@ -60,9 +57,6 @@ export default function index() {
                     </Box>
                     <Flex display={['none', 'none', 'flex', 'flex']}>
                         <ReactPlayer url="assets/checklist.webm" playing loop width="100" height="100" />
-                    </Flex>
-                    <Flex display={['flex', 'flex', 'none', 'none']}>
-                        <ReactPlayer controls playing url="assets/checklist.webm" loop width="100" height="100" />
                     </Flex>
                     <Box>
                         <NextImage placeholder="blur" intrinsic src={frame4} alt="credit karma email image" />

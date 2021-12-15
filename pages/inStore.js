@@ -36,9 +36,6 @@ export default function inStore() {
                     <Flex display={['none', 'none', 'flex', 'flex']}>
                         <ReactPlayer url="assets/cbd.webm" playing loop width="100" height="100" />
                     </Flex>
-                    <Flex display={['flex', 'flex', 'none', 'none']}>
-                        <ReactPlayer controls playing='false' url="assets/cbd.webm" loop width="100" height="100" />
-                    </Flex>
                     <Box>
                         <NextImage placeholder="blur" intrinsic priority src={frame2} alt="credit karma email image" />
                     </Box>
@@ -47,9 +44,6 @@ export default function inStore() {
                     </Box>
                     <Flex display={['none', 'none', 'flex', 'flex']} h={['400px', '400px', '500px','600px']}>
                         <ReactPlayer url="assets/hearth.webm" playing loop width="100" height="100" />
-                    </Flex>
-                    <Flex display={['flex', 'flex', 'none', 'none']} h={['500px', '500px', '700px','700px']} >
-                        <ReactPlayer controls playing='false' url="assets/hearth.webm" loop width="100" height="100" />
                     </Flex>
                     <Box>
                         <NextImage placeholder="blur" intrinsic src={frame4} alt="credit karma email image" />
@@ -62,9 +56,6 @@ export default function inStore() {
                     </Box>
                     <Flex display={['none', 'none', 'flex', 'flex']}>
                         <ReactPlayer url="assets/jworld.webm" playing loop width="100" height="100" />
-                    </Flex>
-                    <Flex display={['flex', 'flex', 'none', 'none']}>
-                        <ReactPlayer controls playing='false' url="assets/jworld.webm" loop width="100" height="100" />
                     </Flex>
                     <Box>
                         <NextImage placeholder="blur" intrinsic src={frame7} alt="credit karma email image" />
