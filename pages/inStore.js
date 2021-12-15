@@ -1,5 +1,6 @@
 
 import Nav from "../components/Nav"
+import ProjectTitle from "../components/ProjectTitle"
 import React from 'react'
 import ReactPlayer from 'react-player'
 import {
@@ -28,39 +29,39 @@ export default function inStore() {
                 py={2}
                 px={8}
             >
-                <Box mb={4} >
-                    <Heading as='h2'>Point of Purchase — animation, design, environmental // Barrows - Los Angeles</Heading>
-                </Box>
-                <VStack spacing={4}>
+                <VStack spacing={8}>
+                    <Box w='100%' mt={2} mb={4}>
+                        <ProjectTitle title="Point of Purchase" subtitle="animation, design, environmental" company="Barrows" location="Los Angeles" />
+                    </Box>
                     <Box >
                         <ReactPlayer url="assets/cbd.webm" playing loop width="100%" height="100%" />
                     </Box>
                     <Box>
-                        <NextImage src={frame2} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic priority src={frame2} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame3} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame3} alt="credit karma email image" />
                     </Box>
                     <Box h={['400', '480px', '620px', '620px']} >
                         <ReactPlayer url="assets/hearth.webm" playing loop width="100%" height="100%" />
                     </Box>
                     <Box>
-                        <NextImage src={frame4} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame4} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame5} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame5} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame6} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame6} alt="credit karma email image" />
                     </Box>
                     <Box h={['400', '480px', '520px', '520px']} >
                         <ReactPlayer url="assets/jworld.webm" playing loop width="100%" height="100%" />
                     </Box>
                     <Box>
-                        <NextImage src={frame7} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame7} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame8} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame8} alt="credit karma email image" />
                     </Box>
                 </VStack>
             </Box>

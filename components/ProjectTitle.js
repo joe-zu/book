@@ -1,23 +1,27 @@
 
 import React from 'react'
 import {
-    Text,
-    IconButton,
-    Button,
-    Flex,
-    Box,
-    Center,
-    propNames,
-  } from '@chakra-ui/react'
+  Text,
+  IconButton,
+  Flex,
+  Box,
+  Heading,
+  Spacer
+} from '@chakra-ui/react'
 
-  export default function ProjectTitle(children) {
-
+const ProjectTitle = (props) => {
 
 
+  // direction={['column', 'column', 'row', 'row']} align={['', '', 'center', 'center']}
 
-      return(
-          <Box>
-            <Text>{props.title}</Text>
-          </Box>
-      )
-  }
+  return (
+    <Flex direction='column'>
+      <Heading as='h4' size='lg' >{props.title}</Heading>
+      <Text fontSize="xl">{props.subtitle}</Text>
+      <Text as='i' fontSize="xl" >{props.company}</Text>
+      <Text fontSize="xl" >{props.location}</Text>
+
+    </Flex>
+  )
+}
+export default ProjectTitle

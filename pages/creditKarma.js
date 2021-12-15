@@ -1,5 +1,6 @@
 
 import Nav from "../components/Nav"
+import ProjectTitle from "../components/ProjectTitle"
 import React from 'react'
 import ReactPlayer from 'react-player'
 import {
@@ -36,48 +37,48 @@ export default function creditKarma() {
                 py={2}
                 px={8}
             >
-                <Box mb={4} >
-                    <Heading as='h2'>Email Campaign — design, production // Credit Karma - Los Angeles</Heading>
-                </Box>
-                <VStack spacing={4} >
-                    <Box h={['400', '480px', '520px', '520px']} >
+                <VStack spacing={8} >
+                <Flex direction={['column', 'column', 'row', 'row']}>
+                        <Box w='100%' mt={2} mb={4}>
+                            <ProjectTitle title="Email Campaign" subtitle="design, production" company="Credit Karma" location="Los Angeles" />
+                        </Box>
                         <ReactPlayer url="assets/ck_notification.webm" playing loop width="100%" height="100%" />
+                    </Flex>
+                    <Box>
+                        <NextImage placeholder="blur" intrinsic priority src={frame1} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame1} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame2} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame2} alt="credit karma email image" />
-                    </Box>
-                    <Box>
-                        <NextImage src={frame3} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame3} alt="credit karma email image" />
                     </Box>
                     <Box h={['400', '480px', '520px', '520px']} >
                         <ReactPlayer url="assets/checklist.webm" playing loop width="100%" height="100%" />
                     </Box>
                     <Box>
-                        <NextImage src={frame4} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame4} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame5} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame5} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame6} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame6} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame7} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame7} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame8} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame8} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame9} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame9} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame10} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame10} alt="credit karma email image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame11} alt="credit karma email image" />
+                        <NextImage placeholder="blur" intrinsic src={frame11} alt="credit karma email image" />
                     </Box>
                 </VStack>
             </Box>

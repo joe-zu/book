@@ -6,13 +6,13 @@ import {
     Flex,
     Box,
     Container,
-    Stack,
+    Kbd,
     Avatar,
     AvatarBadge,
     Spacer,
     Tooltip,
     Link,
-    Wrap,
+    ExternalLinkIcon,
     Divider
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
@@ -40,19 +40,19 @@ const Nav = ({ children }) => {
             pl={8}
         >
             <Flex my={6} >
-                    <NextLink href="/" passHref>
-                <Flex>
-                        <Avatar size='md' name="Joseph Giampaoli" src="">
+                <NextLink href="/about" passHref>
+                    <Flex>
+                        <Avatar size='md' name="Joseph Giampaoli" src="assets/avatar.jpg">
                             <Tooltip hasArrow label="Open to work" aria-label="Open to work" bg="green.500" color="white">
                                 <AvatarBadge boxSize='1.15em' bg='green.500' />
                             </Tooltip>
                         </Avatar>
 
-                    <Flex direction="column" pl={6} justify='center'>
-                        <Text fontSize={['lg', 'lg', 'xl', 'xl']} fontWeight='600' lineHeight='1em'>Joseph Giampaoli</Text>
-                        <Text fontSize={['md', 'md', 'lg', 'lg']}>Graphic Designer</Text>
+                        <Flex direction="column" pl={6} justify='center'>
+                            <Text fontSize={['lg', 'lg', 'xl', 'xl']} fontWeight='600' lineHeight='1em'>Joseph Giampaoli</Text>
+                            <Text fontSize={['md', 'md', 'lg', 'lg']}>Graphic Designer</Text>
+                        </Flex>
                     </Flex>
-                </Flex>
                 </NextLink>
                 <Spacer />
                 <Flex>
@@ -70,20 +70,44 @@ const Nav = ({ children }) => {
                 display={['none', 'none', 'flex', 'flex']}
                 direction="column"
                 mt={10}
+                pl={20}
             >
-                {/* <Text fontSize="md" fontWeight='900'>RECENT WORK</Text> */}
-                <Wrap align='center'>
-                    <Text fontSize="md" fontWeight='900'>RECENT WORK</Text>
-                    <NextLink href="/creditKarma" passHref ><Link fontSize='2em'>Credit Karma</Link></NextLink>
-                    <NextLink href="/inStore" passHref ><Link fontSize='2em'>In Store</Link></NextLink>
-                    <NextLink href="/botanic" passHref ><Link fontSize='2em'>Botanic</Link></NextLink>
-                    <NextLink href="/yale" passHref ><Link fontSize='2em'>Yale</Link></NextLink>
-                    <NextLink href="/wag" passHref ><Link fontSize='2em'>Wag Central</Link></NextLink>
-                    <NextLink href="/snap" passHref ><Link fontSize='2em'>Snap</Link></NextLink>
-                    <NextLink href="/branding" passHref ><Link fontSize='2em'>Brand + Identity</Link></NextLink>
-
-                </Wrap>
-
+            <Text fontSize="md" fontWeight='900'>RECENT WORK</Text>
+                <Flex direction="column" pl={8}>
+                    <Flex align='center' borderWidth='' borderRadius='md'>
+                        <NextLink href="/" passHref ><Link fontSize='1.5em'>Credit Karma</Link></NextLink>
+                    </Flex>
+                    <Flex align='center'>
+                        <NextLink href="/inStore" passHref ><Link fontSize='1.5em'>In Store</Link></NextLink>
+                    </Flex>
+                    <Flex align='center'>
+                        <NextLink href="/botanic" passHref ><Link fontSize='1.5em'>Botanic</Link></NextLink>
+                    </Flex>
+                    <Flex align='center'>
+                        <NextLink href="/yale" passHref ><Link fontSize='1.5em'>Yale Jackson</Link></NextLink>
+                    </Flex>
+                    <Flex align='center'>
+                        <NextLink href="/wag" passHref ><Link fontSize='1.5em'>Wag Central</Link></NextLink>
+                    </Flex>
+                    <Flex align='center'>
+                        <NextLink href="/snap" passHref ><Link fontSize='1.5em'>Snap</Link></NextLink>
+                    </Flex>
+                    <Flex align='center'>
+                        <NextLink href="/branding" passHref ><Link fontSize='1.5em'>Branding</Link></NextLink>
+                    </Flex>
+                    <Flex align='center' borderWidth='' borderRadius='md' mt={10}>
+                        <Link fontSize='1.5em' href='https://still-reef-35670.herokuapp.com/' isExternal>Web dev work</Link>
+                    </Flex>
+                    <Flex align='center' borderWidth='' borderRadius='md' mt={10}>
+                        <NextLink href="/about" passHref ><Link fontSize='1.5em'>About me</Link></NextLink>
+                    </Flex>
+                    <Flex align='center' borderWidth='' borderRadius='md'>
+                        <Link fontSize='1.5em' isExternal href='https://www.linkedin.com/in/joegiampaoli/'>LinkedIn</Link>
+                    </Flex>
+                    <Flex align='center' borderWidth='' borderRadius='md'>
+                        <NextLink href="/about" passHref ><Link fontSize='1.5em'>Contact</Link></NextLink>
+                    </Flex>
+                </Flex>
             </Flex>
 
             <Flex

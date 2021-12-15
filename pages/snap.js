@@ -1,5 +1,6 @@
 
 import Nav from "../components/Nav"
+import ProjectTitle from "../components/ProjectTitle"
 import React from 'react'
 import ReactPlayer from 'react-player'
 import {
@@ -28,25 +29,26 @@ export default function creditKarma() {
                 py={2}
                 px={8}
             >
-                <Box mb={4} >
-                    <Heading as='h2'>Email Campaign — design, production // Credit Karma - Los Angeles</Heading>
-                </Box>
-                <VStack spacing={4} >
 
-                    <Box w="300px">
-                        <NextImage src={frame1} alt="credit karma email image" />
-                    </Box>
+                <VStack spacing={8} >
+
+                <Flex direction={['column', 'column', 'row', 'row']}>
+                        <Box w='100%' mt={2} mb={4}>
+                            <ProjectTitle title="Tax Season Filters" subtitle="animation, design, development" company="Credit Karma" location="Los Angeles" />
+                        </Box>
+                        <NextImage placeholder="blur" intrinsic priority src={frame1} alt="credit karma email image" />
+                    </Flex>
                     <Box>
                         <ReactPlayer url="assets/snap/snap1.webm" playing loop width="100%" height="100%" />
                     </Box>
                     <Box>
-                        <NextImage src={frame3} alt="credit karma email image" />
+                        <NextImage intrinsic src={frame3} alt="credit karma email image" />
                     </Box>
                     <Box>
                         <ReactPlayer url="assets/snap/snap2.webm" playing loop width="100%" height="100%" />
                     </Box>
                     <Box>
-                        <NextImage src={frame2} alt="credit karma email image" />
+                        <NextImage intrinsic src={frame2} alt="credit karma email image" />
                     </Box>
 
                 </VStack>

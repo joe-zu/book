@@ -1,5 +1,6 @@
 
 import Nav from "../components/Nav"
+import ProjectTitle from "../components/ProjectTitle"
 import React from 'react'
 import {
     Text,
@@ -28,33 +29,33 @@ export default function wag() {
                 py={2}
                 px={8}
             >
-                <Box mb={4} >
-                    <Heading as='h2'>Wag Central — identity, web design, branding // MadisonMott - Bridgeport, CT </Heading>
-                </Box>
-                <VStack spacing={4}>
-                    <Box>
-                        <NextImage src={frame1} alt="Wag central image" />
+                <VStack spacing={8}>
+                    <Box w='100%' mt={2} mb={4}>
+                        <ProjectTitle title="Wag Central" subtitle="branding, web design" company="MadisonMott" location="Bridgeport, CT" />
                     </Box>
                     <Box>
-                        <NextImage src={frame2} alt="Wag central image" />
+                        <NextImage placeholder="blur" intrinsic priority src={frame1} alt="Wag central image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame3} alt="Wag central image" />
+                        <NextImage placeholder="blur" intrinsic src={frame2} alt="Wag central image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame4} alt="Wag central image" />
+                        <NextImage placeholder="blur" intrinsic src={frame3} alt="Wag central image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame5} alt="Wag central image" />
+                        <NextImage placeholder="blur" intrinsic src={frame4} alt="Wag central image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame6} alt="Wag central image" />
+                        <NextImage placeholder="blur" intrinsic src={frame5} alt="Wag central image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame7} alt="Wag central image" />
+                        <NextImage placeholder="blur" intrinsic src={frame6} alt="Wag central image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame8} alt="Wag central image" />
+                        <NextImage placeholder="blur" intrinsic src={frame7} alt="Wag central image" />
+                    </Box>
+                    <Box>
+                        <NextImage placeholder="blur" intrinsic src={frame8} alt="Wag central image" />
                     </Box>
                 </VStack>
             </Box>

@@ -1,5 +1,6 @@
 
 import Nav from "../components/Nav"
+import ProjectTitle from "../components/ProjectTitle"
 import React from 'react'
 import ReactPlayer from 'react-player'
 import {
@@ -7,7 +8,7 @@ import {
     Flex,
     Box,
     VStack,
-    Heading
+    Heading,
 } from '@chakra-ui/react'
 import NextImage from 'next/image'
 import frame1 from '../public/assets/botanic/frame1.jpg'
@@ -31,39 +32,39 @@ export default function botanic() {
                 py={2}
                 px={8}
             >
-                <Box mb={4} >
-                    <Heading as='h2'>UI UX Design — product design, identity</Heading>
+                <Box w='100%' mb={4} mt={2}>
+                    <ProjectTitle title="UI UX Design" subtitle="product design, identity" company="" location="" />
                 </Box>
-                <VStack spacing={4}>
+                <VStack spacing={8}>
                     <Box>
-                        <NextImage src={frame1} alt="Botanic UI UX image" />
+                        <NextImage placeholder="blur" intrinsic priority src={frame1} alt="Botanic UI UX image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame2} alt="Botanic UI UX image" />
+                        <NextImage placeholder="blur" intrinsic src={frame2} alt="Botanic UI UX image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame3} alt="Botanic UI UX image" />
+                        <NextImage placeholder="blur" intrinsic src={frame3} alt="Botanic UI UX image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame4} alt="Botanic UI UX image" />
+                        <NextImage placeholder="blur" intrinsic src={frame4} alt="Botanic UI UX image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame5} alt="Botanic UI UX image" />
+                        <NextImage placeholder="blur" intrinsic src={frame5} alt="Botanic UI UX image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame6} alt="Botanic UI UX image" />
+                        <NextImage placeholder="blur" intrinsic src={frame6} alt="Botanic UI UX image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame7} alt="Botanic UI UX image" />
+                        <NextImage placeholder="blur" intrinsic src={frame7} alt="Botanic UI UX image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame8} alt="Botanic UI UX image" />
+                        <NextImage placeholder="blur" intrinsic src={frame8} alt="Botanic UI UX image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame9} alt="Botanic UI UX image" />
+                        <NextImage placeholder="blur" intrinsic src={frame9} alt="Botanic UI UX image" />
                     </Box>
                     <Box>
-                        <NextImage src={frame10} alt="Botanic UI UX image" />
+                        <NextImage placeholder="blur" intrinsic src={frame10} alt="Botanic UI UX image" />
                     </Box>
                 </VStack>
             </Box>
