@@ -12,16 +12,24 @@ import {
     Spacer,
     Tooltip,
     Link,
-    ExternalLinkIcon,
-    Divider
+    Divider,
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalCloseButton,
+    ModalBody,
+    ModalFooter
 } from '@chakra-ui/react'
+import { useDisclosure } from "@chakra-ui/react";
 import NextLink from 'next/link'
 import styled from '@emotion/styled'
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 
 const Nav = ({ children }) => {
 
-    const [display, changeDisplay] = useState('none')
+    // const [display, changeDisplay] = useState('none')
+    const { isOpen, onOpen, onClose } = useDisclosure()
 
     const StickNav = styled(Flex)`
             position: sticky;
@@ -55,13 +63,13 @@ const Nav = ({ children }) => {
                     </Flex>
                 </NextLink>
                 <Spacer />
-                <Flex>
+                <Flex display={['flex', 'flex', 'none', 'none']} pr={6}>
                     <IconButton
                         aria-label="Open Menu"
                         size="lg"
                         icon={<HamburgerIcon />}
                         display={['flex', 'flex', 'none', 'none']}
-                        onClick={() => changeDisplay('flex')}
+                        onClick={onOpen}
                     />
                 </Flex>
             </Flex>
@@ -70,10 +78,10 @@ const Nav = ({ children }) => {
                 display={['none', 'none', 'flex', 'flex']}
                 direction="column"
                 mt={10}
-                pl={20}
+                pl={[0, 0, 10, 20]}
             >
-            <Text fontSize="md" fontWeight='900'>RECENT WORK</Text>
-                <Flex direction="column" pl={8}>
+                <Text fontSize="md" fontWeight='900'>RECENT WORK</Text>
+                <Flex direction="column" pl={[0, 0, 2, 8]}>
                     <Flex align='center' borderWidth='' borderRadius='md'>
                         <NextLink href="/" passHref ><Link fontSize='1.5em'>Credit Karma</Link></NextLink>
                     </Flex>
@@ -110,7 +118,61 @@ const Nav = ({ children }) => {
                 </Flex>
             </Flex>
 
-            <Flex
+
+
+
+            <Modal
+                isCentered
+                onClose={onClose}
+                isOpen={isOpen}
+                motionPreset='slideInBottom'
+                size='sm'
+            >
+                <ModalOverlay />
+                <ModalContent>
+                    <ModalBody>
+                        <Flex direction="column" py={8} align='center'>
+                            <Text mb={4} fontSize="md" fontWeight='900'>RECENT WORK</Text>
+                            <Flex direction="column">
+                                <Flex align='center'>
+                                    <NextLink href="/" passHref ><Link fontSize='1.5em'>Credit Karma</Link></NextLink>
+                                </Flex>
+                                <Flex align='center'>
+                                    <NextLink href="/inStore" passHref ><Link fontSize='1.5em'>In Store</Link></NextLink>
+                                </Flex>
+                                <Flex align='center'>
+                                    <NextLink href="/botanic" passHref ><Link fontSize='1.5em'>Botanic</Link></NextLink>
+                                </Flex>
+                                <Flex align='center'>
+                                    <NextLink href="/yale" passHref ><Link fontSize='1.5em'>Yale Jackson</Link></NextLink>
+                                </Flex>
+                                <Flex align='center'>
+                                    <NextLink href="/wag" passHref ><Link fontSize='1.5em'>Wag Central</Link></NextLink>
+                                </Flex>
+                                <Flex align='center'>
+                                    <NextLink href="/snap" passHref ><Link fontSize='1.5em'>Snap</Link></NextLink>
+                                </Flex>
+                                <Flex align='center'>
+                                    <NextLink href="/branding" passHref ><Link fontSize='1.5em'>Branding</Link></NextLink>
+                                </Flex>
+                                <Flex align='center' borderWidth='' borderRadius='md' mt={6}>
+                                    <Link fontSize='1.5em' href='https://still-reef-35670.herokuapp.com/' isExternal>Web dev work</Link>
+                                </Flex>
+                                <Flex align='center' borderWidth='' borderRadius='md' mt={6}>
+                                    <NextLink href="/about" passHref ><Link fontSize='1.5em'>About me</Link></NextLink>
+                                </Flex>
+                                <Flex align='center' borderWidth='' borderRadius='md'>
+                                    <Link fontSize='1.5em' isExternal href='https://www.linkedin.com/in/joegiampaoli/'>LinkedIn</Link>
+                                </Flex>
+                                <Flex align='center' borderWidth='' borderRadius='md'>
+                                    <NextLink href="/about" passHref ><Link fontSize='1.5em'>Contact</Link></NextLink>
+                                </Flex>
+                            </Flex>
+                        </Flex>
+                    </ModalBody>
+                </ModalContent>
+            </Modal>
+            {/* <Flex
                 w='100vw'
                 h='100vh'
                 bgColor='gray.50'
@@ -132,7 +194,7 @@ const Nav = ({ children }) => {
                         onClick={() => changeDisplay('none')}
                     />
                 </Flex>
-            </Flex>
+            </Flex> */}
 
         </StickNav>
     )
