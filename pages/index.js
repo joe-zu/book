@@ -3,12 +3,11 @@ import Nav from "../components/Nav"
 import ProjectTitle from "../components/ProjectTitle"
 import React from 'react'
 import ReactPlayer from 'react-player'
+import Head from 'next/head'
 import {
-    Text,
     Flex,
     Box,
-    VStack,
-    Heading
+    VStack
 } from '@chakra-ui/react'
 import NextImage from 'next/image'
 import frame1 from '../public/assets/ck/Frame1.png'

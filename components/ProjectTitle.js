@@ -16,7 +16,7 @@ const ProjectTitle = (props) => {
 
   return (
     <Flex direction='column'>
-      <Heading as='h4' size='lg' >{props.title}</Heading>
+      <Heading as='h1' size='lg' >{props.title}</Heading>
       <Text fontSize="xl">{props.subtitle}</Text>
       <Text as='i' fontSize="xl" >{props.company}</Text>
       <Text fontSize="xl" >{props.location}</Text>

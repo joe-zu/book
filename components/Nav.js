@@ -1,12 +1,10 @@
 import { useState } from "react";
+import Head from 'next/head';
 import {
     Text,
     IconButton,
-    Button,
     Flex,
     Box,
-    Container,
-    Kbd,
     Avatar,
     AvatarBadge,
     Spacer,
@@ -16,10 +14,8 @@ import {
     Modal,
     ModalOverlay,
     ModalContent,
-    ModalHeader,
-    ModalCloseButton,
     ModalBody,
-    ModalFooter
+    VStack
 } from '@chakra-ui/react'
 import { useDisclosure } from "@chakra-ui/react";
 import NextLink from 'next/link'
@@ -46,6 +42,11 @@ const Nav = ({ children }) => {
             align={['', '', 'left', 'left']}
             pl={8}
         >
+            <Head>
+                <title>Joe Giampaoli</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/304/white-circle_26aa.png"/>
+            </Head>
             <Flex my={6} >
                 <NextLink href="/about" passHref>
                     <Flex>
@@ -129,41 +130,43 @@ const Nav = ({ children }) => {
                     <ModalBody>
                         <Flex direction="column" py={8} align='center'>
                             <Text mb={4} fontSize="md" fontWeight='900'>RECENT WORK</Text>
-                            <Flex direction="column">
-                                <Flex align='center'>
+                            <VStack direction="column" spacing={4} align="left">
+                                <Flex>
                                     <NextLink href="/" passHref ><Link fontSize='1.5em'>Credit Karma</Link></NextLink>
                                 </Flex>
-                                <Flex align='center'>
+                                <Flex>
                                     <NextLink href="/inStore" passHref ><Link fontSize='1.5em'>In Store</Link></NextLink>
                                 </Flex>
-                                <Flex align='center'>
+                                <Flex>
                                     <NextLink href="/botanic" passHref ><Link fontSize='1.5em'>Botanic</Link></NextLink>
                                 </Flex>
-                                <Flex align='center'>
+                                <Flex>
                                     <NextLink href="/yale" passHref ><Link fontSize='1.5em'>Yale Jackson</Link></NextLink>
                                 </Flex>
-                                <Flex align='center'>
+                                <Flex>
                                     <NextLink href="/wag" passHref ><Link fontSize='1.5em'>Wag Central</Link></NextLink>
                                 </Flex>
-                                <Flex align='center'>
+                                <Flex>
                                     <NextLink href="/snap" passHref ><Link fontSize='1.5em'>Snap</Link></NextLink>
                                 </Flex>
-                                <Flex align='center'>
+                                <Flex>
                                     <NextLink href="/branding" passHref ><Link fontSize='1.5em'>Branding</Link></NextLink>
                                 </Flex>
-                                <Flex align='center' borderWidth='' borderRadius='md' mt={6}>
+                                <Divider />
+                                <Flex borderWidth='' borderRadius='md'>
                                     <Link fontSize='1.5em' href='https://still-reef-35670.herokuapp.com/' isExternal>Web dev work</Link>
                                 </Flex>
-                                <Flex align='center' borderWidth='' borderRadius='md' mt={6}>
+                                <Divider />
+                                <Flex borderWidth='' borderRadius='md' mt={6}>
                                     <NextLink href="/about" passHref ><Link fontSize='1.5em'>About me</Link></NextLink>
                                 </Flex>
-                                <Flex align='center' borderWidth='' borderRadius='md'>
+                                <Flex borderWidth='' borderRadius='md'>
                                     <Link fontSize='1.5em' isExternal href='https://www.linkedin.com/in/joegiampaoli/'>LinkedIn</Link>
                                 </Flex>
-                                <Flex align='center' borderWidth='' borderRadius='md'>
+                                <Flex borderWidth='' borderRadius='md'>
                                     <NextLink href="/about" passHref ><Link fontSize='1.5em'>Contact</Link></NextLink>
                                 </Flex>
-                            </Flex>
+                            </VStack>
                         </Flex>
                     </ModalBody>
                 </ModalContent>
