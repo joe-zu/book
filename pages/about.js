@@ -36,7 +36,7 @@ export default function creditKarma() {
                     </GridItem>
                     <GridItem colSpan={6} bg='' mb={10}>
                         <Text fontSize="2xl" mb={8}>
-                            Hi! — I'm Joseph Giampaoli, a graphic designer and web developer in Los Angeles, CA. I design strategic creative for brands, products, + tech. I focus on creating visual experiences that are accessible and engaging for all.
+                            Hi! — I am Joseph Giampaoli, a graphic designer and web developer in Los Angeles, CA. I design strategic creative for brands, products, + tech. I focus on creating visual experiences that are accessible and engaging for all.
                         </Text>
                         <Text fontSize="2xl">
                             I hold a BFA in Graphic Design from the Shintaro Akatsu School of Design : University of Bridgeport —
